@@ -43,7 +43,7 @@ setwd(PrimaryDirectory)
 
 sce <- readRDS(file.path(OutputDirectory, "sce_Tcell.rds"))
 
-pbMDS(sce, dims = c(1,2), fun = "median", features = type_markers(sce),
+pbMDS(sce, dims = c(2,3), fun = "median", features = type_markers(sce),
       size_by = TRUE, by = "sample_id")
 
 seed <- 123456

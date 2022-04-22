@@ -127,6 +127,7 @@ sample_md <- sample_md %>%
   # dplyr::filter(Disease != "CLL") %>%
   # dplyr::filter(Disease != "HD") %>%
   # dplyr::filter(Disease != "PCL") %>%
+  dplyr::filter(Disease == "AML") %>%
   dplyr::filter(Group != "HD") %>%
   dplyr::filter(Timepoint == "Baseline") %>%
   dplyr::filter(Group != "no_harvest")
